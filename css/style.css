@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  width: 1480px;
+  width: 100%;
   margin: 0 auto;
   background-color: var(--white-color);
 }
@@ -31,8 +31,6 @@ ul {
 .header {
   display: flex;
   justify-content: space-between;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
   padding: 50px;
   height: 150px;
   background-color: var(--fw-orange);
@@ -49,10 +47,12 @@ ul {
 }
 
 .nav{
-  width: 500px;
+  width: 700px;
 }
 
 .nav .nav_elements{
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -62,6 +62,8 @@ ul {
   grid-template-columns: repeat(2, 50%);
   gap: 60px;
   height: 500px;
+  width: 1480px;
+  margin: 0 auto;
 }
 
 .main-content p{
@@ -75,13 +77,74 @@ ul {
 
 .main-content figure {
   margin: auto 0;
+  padding: 30px 50px;
 }
 
 .main-content figure img {
   width: 90%;
   height: 85%;
-  padding: 30px 50px;
+  border-radius: 2px;
 }
+
+.places {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 350px;
+  padding: 50px 100px;
+  margin: 70px auto;
+  background-color: var(--fw-orange);
+}
+
+.places-section {
+  width: 250px;
+  height: 200px;
+}
+
+.places-section p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  padding: 5px 5px;
+  margin: auto 0;
+  color: var(--white-color)
+}
+
+.places-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.star {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.star h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.4rem;
+}
+
+.star figure {
+  overflow: hidden;
+  height: 500px;
+}
+
+.star figure img {
+  width: 100%;
+  opacity: 0.9;
+}
+
+.star figure img:hover {
+  opacity: 0.5;
+}
+
+/**Componentes*/
 
 hr.rounded {
   width: 50%;
@@ -90,13 +153,14 @@ hr.rounded {
 }
 
 .button{
-  height: 100%;
-  width: 100%;
   text-decoration: none;
-  display: block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 120px;
   font-size: 2.4rem;
-  font: 700;
+  font-weight: 700;
   color: var(--white-color);
   font-family: var(--font-sans);
 }
