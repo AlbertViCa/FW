@@ -144,7 +144,67 @@ ul {
   opacity: 0.5;
 }
 
+.articles {
+  width: 100%;
+  height: auto;
+  margin: 70px auto;
+}
 
+.article-section {
+  display: flex;
+  width: 1480px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.article-section p {
+  margin: auto 0;
+  padding: 0 50px;
+  width: 50%;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--black)
+}
+
+.article-section figure {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;  
+}
+
+.article-section figure img {
+  position: absolute;
+  bottom: 0;
+}
+
+.articles .as-1 figure img {
+  height: 260%;
+  transform: translate(0, 35%);
+}
+
+.articles .as-2 figure img {
+  transform: translate(-24%, 12%);
+}
+
+.articles .as-3 figure img {
+  transform: translate(-20%, 20%);
+}
+
+.articles .as-4 figure img {
+  transform: translate(-15%, 25%);
+}
+
+.articles .as-1, .as-3  {
+  width: 100%;
+  padding: 0 200px;
+  background-color: var(--fw-orange);
+}
+
+.articles .as-1 p, .as-3 p {
+  color: var(--white-color)
+}
 
 /**Componentes*/
 
